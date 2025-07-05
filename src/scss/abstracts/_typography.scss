@@ -1,0 +1,19 @@
+@use "variables" as *;
+@use "functions" as *;
+
+$min-width: strip-units($content-min-width);
+$max-width: strip-units($content-max-width);
+
+@mixin font-base {
+    font-family: "Wix Madefor Text", sans-serif;
+    font-size: fluid(1.4, 1.6, $min-width, $max-width);
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+// @mixin font-heading {
+//     font-family: "Wix Madefor Text", sans-serif;
+//     font-size: fluid(2, 2.6, $min-width, $max-width);
+//     font-weight: 600;
+//     line-height: 1.5;
+// }

@@ -1,0 +1,15 @@
+:root {
+    --color-bg-primary: black;
+    --color-text-primary: white;
+    --color-accent: royalblue;
+    --color-accent-300: rgb(from var(--color-accent) r g b / 0.3);
+    --color-focus: yellowgreen;
+
+    --border-xs: 0.5rem;
+    --border-sm: 1rem;
+    --border-circle: 100vw;
+
+    --icon-size: 2.4rem;
+
+    --transition-duration: 300ms;
+}

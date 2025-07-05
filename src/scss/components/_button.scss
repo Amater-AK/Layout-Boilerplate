@@ -1,0 +1,17 @@
+@use "@/scss/abstracts/media-queries" as *;
+@use "@/scss/abstracts/typography" as *;
+
+.button {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    @include font-base;
+    text-align: center;
+    color: var(--color-bg-primary);
+    background-color: var(--color-text-primary);
+    transition-duration: var(--transition-duration);
+
+    @include onhover {
+        color: var(--color-accent);
+        background-color: var(--color-bg-primary);
+    }
+}
