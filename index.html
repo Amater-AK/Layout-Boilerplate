@@ -9,7 +9,20 @@
         <script type="module" src="/src/assets/js/script.js"></script>
     </head>
     <body>
+        <svg xmlns="http://www.w3.org/2000/svg" id="icons-sprite" aria-hidden="true" style="display: none">
+            <symbol id="icon-menu" viewBox="0 0 24 24">
+                <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+            </symbol>
+        </svg>
+
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, aperiam?</p>
         <img src="./src/assets/images/photo-320.jpg" alt="" />
+
+        <button class="button button--small button--icon">
+            <svg class="icon" width="24" height="24" aria-hidden="true">
+                <use href="#icon-menu"></use>
+            </svg>
+            <span class="sr-only">Toggle mobile menu</span>
+        </button>
     </body>
 </html>
