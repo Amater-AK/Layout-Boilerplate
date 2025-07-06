@@ -46,6 +46,20 @@
     }
 }
 
+@mixin onhover-btn {
+    @media (hover: hover) {
+        &:hover:not(:disabled) {
+            @content;
+        }
+    }
+
+    @media (hover: none) {
+        &:active:not(:disabled) {
+            @content;
+        }
+    }
+}
+
 @mixin ishover {
     @media (hover: hover) {
         @content;
